@@ -1,0 +1,6 @@
+out
+.vs
+build
+vcpkg   
+CMakeFiles
+.vscode

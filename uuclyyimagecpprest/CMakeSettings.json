@@ -1,0 +1,54 @@
+﻿{
+  "configurations": [
+    {
+      "name": "x64-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "inheritEnvironments": [ "msvc_x64_x64", "x64-osx" ],
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "/Users/svenweisker/private_project/uuclyyimagecpprest/vcpkg/scripts/buildsystems/vcpkg.cmake",
+          "type": "FILEPATH"
+        }
+      ],
+      "cmakeToolchain": "/Users/svenweisker/private_project/uuclyyimagecpprest/vcpkg/scripts/buildsystems/vcpkg.cmake"
+    },
+    {
+      "name": "x86-Debug",
+      "generator": "Ninja",
+      "configurationType": "Debug",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "inheritEnvironments": [ "msvc_x86",  "x64-osx" ],
+      "variables": []
+    },
+    {
+      "name": "x64-Release",
+      "generator": "Ninja",
+      "configurationType": "Release",
+      "buildRoot": "${projectDir}\\out\\build\\${name}",
+      "installRoot": "${projectDir}\\out\\install\\${name}",
+      "cmakeCommandArgs": "",
+      "buildCommandArgs": "",
+      "ctestCommandArgs": "",
+      "cmakeToolchain": "",
+      "inheritEnvironments": [ "msvc_x64_x64",  "x64-osx" ],
+      "variables": [
+        {
+          "name": "CMAKE_TOOLCHAIN_FILE",
+          "value": "/Users/svenweisker/private_project/uuclyyimagecpprest/vcpkg/scripts/buildsystems/vcpkg.cmake",
+          "type": "FILEPATH"
+        }
+      ]
+    }
+  ]
+}
